@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_layout.view.*
 
-class SimpleRecycleViewAdapter(private val context : Context,
-                               private val posts : List<Post>) :
-    RecyclerView.Adapter<SimpleRecycleViewAdapter.PostHolder>(){
+class SimpleRecycleAdapter(private val context : Context,
+                           private val posts : List<Post>) :
+    RecyclerView.Adapter<SimpleRecycleAdapter.PostHolder>(){
 
     override fun onCreateViewHolder(parent : ViewGroup, viewType : Int) : PostHolder {
 

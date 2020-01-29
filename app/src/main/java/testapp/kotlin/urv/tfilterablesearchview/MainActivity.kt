@@ -6,6 +6,7 @@ import android.widget.EditText
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.jakewharton.rxbinding2.widget.textChanges
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
@@ -19,14 +20,17 @@ class MainActivity : AppCompatActivity() {
     private lateinit var viewModel: MainViewModel
     private val disposable = CompositeDisposable()
 
+    private var adapter: SimpleRecycleAdapter? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         viewModel = ViewModelProviders.of(this)[MainViewModel::class.java]
 
+        val recyclerView : RecyclerView = findViewById(R.id.recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = SimpleRecycleViewAdapter(this, viewModel.oldFilteredPosts)
+        recyclerView.adapter = SimpleRecycleAdapter(this, viewModel.oldFilteredPosts)
 
         val searchInput : EditText = findViewById(R.id.ed_search)
         searchInput
@@ -42,6 +46,7 @@ class MainActivity : AppCompatActivity() {
                         viewModel.oldFilteredPosts.clear()
                         viewModel.oldFilteredPosts.addAll(viewModel.filteredPosts)
                         diffResult.dispatchUpdatesTo(recyclerView.adapter!!)
+                        adapter?.notifyDataSetChanged()
                     }.addTo(disposable)
             }.addTo(disposable)
     }
