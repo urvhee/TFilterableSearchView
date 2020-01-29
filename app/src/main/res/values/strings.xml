@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">TFilterableSearchView</string>
+
+    <!-- Sample elements strings -->
+    <string name="sample_title">This is a title</string>
+    <string name="sample_content">This is a content sample to be positioned under title</string>
+
+    <!-- Post sample title and content -->
+    <!-- 1 -->
+    <string name="tp1">Ubi est castus animalis?</string>
+    <string name="tc1">
+        Albus solems ducunt ad plasmator.
+        Amors trabem in brigantium! Nutrix experimentums,
+        tanquam camerarius ventus.
+    </string>
+
+    <!-- 2 -->
+    <string name="tp2">Always spiritually gain the crystal power</string>
+    <string name="tc2">
+        When one traps conclusion and attitude, one is able to fear surrender.
+        Yes, there is order, it empowers with bliss.
+    </string>
+
+    <!-- 3 -->
+    <string name="tp3">Place the truffels in a casserole, and rub ultimately with whole teriyaki</string>
+    <string name="tc3">
+        Place the tuna in a pan, and mix carefully muddy with melted carrots lassi.
+        Per guest prepare twenty tablespoons of eggs lassi with warmed ramen for dessert.
+    </string>
+
+    <!-- 4 -->
+    <string name="tp4">Why does the scabbard fall?</string>
+    <string name="tc4">
+        Jolly halitosis lead to the amnesty. The pants whines beauty like a rainy moon.
+        When the wind screams for puerto rico, all suns hail rough, clear seashells.
+        Scallywags sing from malarias like salty ships.
+    </string>
+
+    <!-- 5 -->
+    <string name="tp5">Impressively translate a ferengi</string>
+    <string name="tc5">
+        The tragedy is an interstellar nanomachine. Wobble wihtout starlight travel,
+        and we won’t promise a space. Meet wihtout nuclear flux,
+        and we won’t transform a sonic shower. When the crewmate views for deep space,
+        all starships travel intelligent, cloudy transporters.
+    </string>
+    <string name="ed_search">Input keyword here</string>
+
+</resources>
