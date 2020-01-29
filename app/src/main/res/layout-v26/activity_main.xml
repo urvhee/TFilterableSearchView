@@ -8,27 +8,35 @@
     android:padding="5dp"
     tools:context=".MainActivity">
 
-    <EditText
+    <androidx.cardview.widget.CardView
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/recycler_view"
 
-        android:id="@+id/ed_search"
-        android:hint="Search.."
-        android:layout_width="0dp"
+        android:id="@+id/search"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp" />
+        app:cardCornerRadius="5dp">
+
+        <EditText
+            android:id="@+id/ed_search"
+            android:hint="Search.."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_margin="10dp"/>
+
+    </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ed_search"
+        app:layout_constraintTop_toBottomOf="@id/search"
 
         android:id="@+id/recycler_view"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"/>
+        android:layout_height="0dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
