@@ -45,5 +45,7 @@
         all starships travel intelligent, cloudy transporters.
     </string>
     <string name="ed_search">Input keyword here</string>
+    <string name="lorem_ipsum">Lorem Ipsum Dolor Sit Amet</string>
+    <string name="lorem_ipsum_full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ligula massa, feugiat a nunc aliquam, tempus fermentum augue. Integer et dolor at dolor venenatis porta. Morbi accumsan augue ut erat imperdiet, et rhoncus ipsum tempus. Nulla nec lacinia diam, et suscipit augue. Sed iaculis massa vel erat placerat ornare. Nam a elementum massa. Cras eu lobortis metus. Nunc congue facilisis purus nec suscipit. Donec consequat nisi in facilisis gravida. Morbi pulvinar vehicula arcu vitae feugiat…</string>
 
 </resources>

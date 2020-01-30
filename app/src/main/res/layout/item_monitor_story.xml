@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:background="#F9F9F9"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="@string/lorem_ipsum"
+            android:paddingBottom="10dp"/>
+
+        <ImageView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+
+            android:id="@+id/banner_story"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <TextView
+            app:layout_constraintStart_toEndOf="@id/banner_story"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/lorem_ipsum_full"
+            android:paddingStart="10dp"/>
+
+        <ImageView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline"
+
+            android:id="@+id/icon_user"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            app:layout_constraintStart_toEndOf="@id/icon_user"
+            app:layout_constraintTop_toBottomOf="@id/guideline"
+
+            android:id="@+id/byline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Abdul Basith Bardan"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"/>
+
+        <ImageView
+            app:layout_constraintStart_toEndOf="@id/byline"
+            app:layout_constraintTop_toBottomOf="@id/guideline"
+
+            android:id="@+id/icon_calendar"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            app:layout_constraintStart_toEndOf="@id/icon_calendar"
+            app:layout_constraintTop_toBottomOf="@id/guideline"
+
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="29 Jan 2020 16:44"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline"
+
+            android:id="@+id/workstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="WRITE"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/icon_user"
+
+            android:id="@+id/parent_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8sp"
+            android:text="Kontan"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/parent_name"
+
+            android:id="@+id/desk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Harian Makro"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"/>
+
+        <ImageView
+            app:layout_constraintEnd_toStartOf="@id/count_audio"
+            app:layout_constraintTop_toBottomOf="@id/workstate"
+            android:id="@+id/icon_audio"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/workstate"
+
+            android:id="@+id/count_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="0"
+            android:layout_marginTop="18dp"/>
+
+        <ImageView
+            app:layout_constraintEnd_toStartOf="@id/count_video"
+            app:layout_constraintTop_toBottomOf="@id/workstate"
+            android:id="@+id/icon_video"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            app:layout_constraintEnd_toStartOf="@id/icon_audio"
+            app:layout_constraintTop_toBottomOf="@id/workstate"
+
+            android:id="@+id/count_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="0"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="20dp"/>
+
+        <ImageView
+            app:layout_constraintEnd_toStartOf="@id/count_photo"
+            app:layout_constraintTop_toBottomOf="@id/workstate"
+            android:id="@+id/icon_photo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            app:layout_constraintEnd_toStartOf="@id/icon_video"
+            app:layout_constraintTop_toBottomOf="@id/workstate"
+
+            android:id="@+id/count_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="0"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="20dp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="177dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
